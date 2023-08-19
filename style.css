@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+.menu-container {
+    color: #fff;
+    background-color: lightblue; 
+    padding: 20px 0;
+    
+    display: flex;
+    justify-content: center;
+    }
+    
+
+
+.menu {
+display: flex;
+width: 900px ;
+justify-content: space-around;
+}
+
+.one {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+display: flex;
+flex-direction: column;
+max-width: 400px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
