@@ -10,17 +10,19 @@ body {
 }
 
 header {
-    background-color: #1f2937;
-    padding: 1em 13em;
+  background-image: linear-gradient(45deg, blue, rgb(226, 218, 218)); 
+
 }
-
-
 /* NAVIGATION */
 nav {
     display: flex;
     padding-top: 1rem;
     padding-bottom: 4rem;
     justify-content: space-between;
+    margin-left: 2em;
+    margin-right:2em;
+  
+   
 }
 
 .nav ul {
@@ -29,8 +31,7 @@ display: flex;
 gap: 1.5em;
 }
     
-    
-    
+
 ul {
     list-style-type: none;
     display:flex;
@@ -43,6 +44,8 @@ ul {
         font-weight: 900;
         color: #F9FAF8;
     }
+
+
 /* end of NAV */
 
 /* Header-content*/
@@ -50,6 +53,7 @@ h1 {
 font-size: 3rem;
 font-weight: 900;
 margin-bottom: 1rem;
+
 }
 
 .left p {
@@ -75,11 +79,15 @@ background-color: rgb(72, 72, 250);
 h2 {
 text-align: center;
 padding: 2rem;
+text-decoration: dashed;
+color: white;
+
 }
 
 .header-content {
 display: -webkit-flex;
 justify-content: center;
+gap:5em;
 }
 
 .right img {
@@ -93,17 +101,79 @@ padding: 10px;
 }
 
 .left p {
-max-width: 15em;
+max-width: 17em;
+text-align: center;
+}
+
+.left {
+    text-align: center;
 }
 
 /*end of header-content */
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em 0 6em 0;
+    gap: 10em
+}
+
+.card {
+    text-align: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18em;
+    margin-bottom: 3em;
+    color: white;
+    text-shadow: rebeccapurple 0 0 10px;
+}
+
+.card img {
+    color: white;
+    
+    
+}
+
+
+main {
+background-image: linear-gradient(45deg, blue, rgb(226, 218, 218)); 
+}
+
+/* glow effect */
+.main-title {
+font-family: sans-serif;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.glow {
+color: white;
+
+font-size: 4em;
+
+}
+
+h2 {
+animation: shadows 2s infinite
+}
+
+@keyframes shadows {
+    0% { text-shadow: #48abe0 0 0 10px; }
+    50% { text-shadow: blueviolet 0 0 10px; }
+    75% { text-shadow: rebeccapurple 0 0 10px;}
+    100% { text-shadow: #48abe0 0 0 10px; }
+}
+
+/* glow effect */
 
 
 
 
-
-  
 
  
 
