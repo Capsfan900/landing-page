@@ -10,8 +10,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(45deg, blue, rgb(226, 218, 218)); 
-
+    background-image: linear-gradient(45deg, blue, rgb(226, 218, 218)); 
 }
 /* NAVIGATION */
 nav {
@@ -21,29 +20,35 @@ nav {
     justify-content: space-between;
     margin-left: 6em;
     margin-right:6em;
-  
-   
+    
 }
 
-.nav ul {
-list-style-type: none;
-display: flex;
-gap: 1.5em;
-}
-    
 
 ul {
     list-style-type: none;
     display:flex;
     justify-content: flex-end;
     gap:30px;
-    }
+ }
 
 #logo {
         font-size: 24px;
         font-weight: 900;
         color: #F9FAF8;
-    }
+}
+
+.left-nav:hover {
+    transform: translateY(-10px);
+}
+a.two:hover {
+    transform: translateY(-10px);
+}
+a.one:hover {
+    transform: translateY(-10px);
+}
+a.three:hover {
+    transform: translateY(-10px);
+}
 
 
 /* end of NAV */
@@ -54,14 +59,12 @@ font-size: 3rem;
 font-weight: 900;
 margin-bottom: 1rem;
 color: azure;
+
 }
 
 h1 {
     animation: shadows 2s infinite
 }
-
-
-
 
 
 
@@ -90,6 +93,9 @@ text-align: center;
 padding: 2rem;
 text-decoration: dashed;
 color: white;
+border-radius: 20%;
+
+margin-top: 1em;
 
 }
 
@@ -104,6 +110,8 @@ flex-wrap: wrap;
 width: 100%;
 height: 30vh;
 object-fit:cover;
+
+
 }
     
 .left,.right {
@@ -128,30 +136,47 @@ text-align: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 3em 0 6em 0;
-    gap: 10em
+    gap: 10em;
+  
+    
 }
 
 .card {
     text-align: center;
-    max-width: 200px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 18em;
     margin-bottom: 3em;
-    color: white;
-    text-shadow: rebeccapurple 0 0 10px;
+    border-radius: 50%;
+    border-width: 1em;
+    position: relative;
+    z-index: 0;
+    transition: .3s;
+    cursor: pointer;
+ 
 }
+
+.card:hover {
+    box-shadow: 0 0 50px 15px #48abe0;
+    border-radius: 50%;
+    transform: translateY(-10px)
+
+    
+}
+
 
 .card img {
     color: white;
-    
+    border-radius: 50%;
+
     
 }
 
 
 main {
-background-image: linear-gradient(45deg, blue, rgb(226, 218, 218)); 
+    background-image: linear-gradient(45deg, blue, rgb(226, 218, 218));   
 }
 
 /* glow effect */
@@ -181,6 +206,46 @@ animation: shadows 2s infinite
 }
 
 /* glow effect */
+
+
+.second-title {
+
+
+}
+
+
+
+
+.second-content {
+padding: 1em 1em;
+display: flex;
+flex-wrap: wrap;
+justify-content: center
+
+
+
+}
+
+body {
+background-image: linear-gradient(45deg, rgb(241, 241, 241), rgb(24, 223, 156));   
+}
+
+.quote {
+padding: 0em;
+display: flex;
+flex-wrap: wrap;
+max-width: 100em;
+
+}
+
+.quote p {
+    margin-bottom: 2em;
+    font-size: 2em;
+    display: flex;
+    margin-left: 3em;
+    animation: shadows 2s infinite
+
+    }
 
 
 
