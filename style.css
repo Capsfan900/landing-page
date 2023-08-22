@@ -113,6 +113,10 @@ justify-content: center;
 gap:10em;
 flex-wrap: wrap;
 }
+.header-content p {
+    color: white;
+}
+
 
 .right img {
 width: 100%;
@@ -340,7 +344,19 @@ font-size: 1em ;
 .rightbtn button:hover {
     cursor: pointer;
     background-color: rgb(72, 72, 250);
-    }
+}
+
+.end-text {
+padding:1em;
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+text-align: center;
+}
+
+
+.
+
+
       
 
 
