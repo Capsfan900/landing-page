@@ -10,17 +10,24 @@ body {
 }
 
 header {
-    background-image: linear-gradient(45deg, blue, rgb(226, 218, 218)); 
+
 }
+
 /* NAVIGATION */
 nav {
     display: flex;
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
     margin-left: 6em;
     margin-right:6em;
-    
+    gap:1em;
+   
+}
+
+.nav {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 
@@ -29,6 +36,7 @@ ul {
     display:flex;
     justify-content: flex-end;
     gap:30px;
+    opacity:100%;
  }
 
 #logo {
@@ -130,6 +138,9 @@ text-align: center;
 
 /*end of header-content */
 
+
+
+/*Main styling */
 .card-container {
     display: flex;
     justify-content: center;
@@ -139,44 +150,44 @@ text-align: center;
     gap: 10em;
   
     
+    
 }
 
 .card {
-    text-align: center;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18em;
-    margin-bottom: 3em;
-    border-radius: 50%;
-    border-width: 1em;
-    position: relative;
-    z-index: 0;
-    transition: .3s;
-    cursor: pointer;
+ text-align: center;
+ max-width: 300px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 18em;
+ margin-bottom: 3em;
+ border-radius: 50%;
+ border-width: 1em;
+ position: relative;
+ z-index: 0;
+ transition: .3s;
+cursor: pointer;
  
 }
 
 .card:hover {
-    box-shadow: 0 0 50px 15px #48abe0;
-    border-radius: 50%;
-    transform: translateY(-10px)
+box-shadow: 0 0 50px 15px #48abe0;
+border-radius: 50%;
+transform: translateY(-10px)
 
     
 }
 
 
 .card img {
-    color: white;
-    border-radius: 50%;
-
-    
+ color: white;
+border-radius: 50%;   
 }
 
 
 main {
-    background-image: linear-gradient(45deg, blue, rgb(226, 218, 218));   
+  
+    
 }
 
 /* glow effect */
@@ -185,6 +196,7 @@ font-family: sans-serif;
 padding: 0;
 display: flex;
 justify-content: center;
+font-family:
 }
 
 .glow {
@@ -199,20 +211,13 @@ animation: shadows 2s infinite
 }
 
 @keyframes shadows {
-    0% { text-shadow: #48abe0 0 0 10px; }
-    50% { text-shadow: blueviolet 0 0 10px; }
-    75% { text-shadow: rebeccapurple 0 0 10px;}
-    100% { text-shadow: #48abe0 0 0 10px; }
+  0% { text-shadow: #48abe0 0 0 10px; }
+ 50% { text-shadow: blueviolet 0 0 10px; }
+  75% { text-shadow: rebeccapurple 0 0 10px;}
+100% { text-shadow: #48abe0 0 0 10px; }
 }
 
 /* glow effect */
-
-
-.second-title {
-
-
-}
-
 
 
 
@@ -225,35 +230,124 @@ justify-content: center
 
 
 }
+/*Main styling */
+
 
 body {
-background-image: linear-gradient(45deg, rgb(241, 241, 241), rgb(24, 223, 156));   
+
 }
 
+
 .quote {
+padding: 2em;
 padding: 0em;
 display: flex;
 flex-wrap: wrap;
-max-width: 100em;
+max-width: 57em;
 
 }
 
 .quote p {
-    margin-bottom: 2em;
-    font-size: 2em;
+margin-top: 1em;
+margin-bottom: 1em;
+font-size: 2.5em;
+display: flex;
+   
+animation: shadows 2s infinite
+
+    
+
+}
+
+#background {
+position: fixed;
+width: 100%;
+height: 100%;
+object-fit: cover;
+top: 0;
+left: 0;
+filter: brightness(1.2);
+z-index: -2;
+}
+
+/* end of main */
+
+
+/*quote */
+
+.quote-wrapper {
+display: flex;
+justify-content: center;
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+
+
+}
+
+
+.smallp p {
+font-size: 1.5em;
+margin-left: 13em;
+flex-wrap: wrap;
+}
+
+
+
+/*footer */
+footer {
+    padding:5em;
     display: flex;
-    margin-left: 3em;
-    animation: shadows 2s infinite
+    justify-content:center ;
+    
+}
 
-    }
+.calltoaction {
+display: flex;
+height: 10em;
+width: 50em;
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+justify-content: space-around;
+align-items: center;
 
 
+}
+.btntext {
+font-size: 2em;
+display: flex;
+}
 
+.smlbtntxt {
+font-size: 1em ;
 
-
+}
+.buttons {
  
 
-  
+}
+
+.rightbtn button {
+        margin-top: 2em;
+        background-color: #3882f6;
+        border: 1px solid #3882f6;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        border-radius: 0.7rem;
+    }
+      
+.rightbtn button:hover {
+    cursor: pointer;
+    background-color: rgb(72, 72, 250);
+    }
+      
+
+
+
+
+
+
   
 
 
